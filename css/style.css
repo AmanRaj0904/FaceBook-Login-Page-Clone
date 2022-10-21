@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap");
+:root {
+  --main-color: #1877f2;
+  --secondary-color: #f0f2f5;
+  --text-color: #000000;
+}
+body{
+    overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+.main-area {
+  background-color: var(--secondary-color);
+  width: 100%;
+  height: 90vh;
+}
+.main-section {
+  height: 75vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.section-left {
+  padding: 40px;
+}
+.section-left img {
+  margin: -28px;
+  height: 106px;
+}
+
+.section-left p {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 15px 0;
+}
+.section-right {
+  background-color: #fff;
+  width: 400px;
+  height: 370px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+  margin-top: 40px;
+}
+.section-right form {
+  padding: 30px;
+  display: grid;
+  justify-self: center;
+  align-self: center;
+}
+.section-right form input {
+  margin: 12px 0;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+.section-right > input[type="text"]:focus,
+.section-right > input[type="password"]:focus {
+  border: 1px solid #1877f2;
+  box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.section-right form .form-btn {
+  background-color: var(--main-color);
+  font-size: 20px;
+  padding: 15px 22px;
+  margin: 12px 0;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  transition: 0.5s linear all;
+}
+.section-right form .form-btn:hover {
+  background-color: #166fe5;
+}
+.section-right form .forgot-pass {
+  margin: 12px 0;
+  color: var(--main-color);
+}
+.section-right form hr {
+  /* margin-top: 10px; */
+  color: 1px solid #dadde1;
+}
+.section-right .create-page {
+  background-color: #42b72a;
+  border: none;
+  padding: 15px 20px;
+  margin-top: 30px;
+  font-size: 18px;
+  color: #fff;
+  border-radius: 10px;
+  transition: 0.5s linear all;
+  margin-bottom: 20px;
+}
+.section-right .create-page:hover {
+  background-color: #269e0e;
+}
